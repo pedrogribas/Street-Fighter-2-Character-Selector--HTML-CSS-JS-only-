@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHOOSE YOUR CHARACTER</title>
+</head>
+<style>
+    .characterBox {
+        background-color: #426da5;
+        border: #9DA5A9 ridge 8px;
+        position: relative;
+    }
+
+    .characterBox:hover {
+        cursor: pointer;
+        background-color: #2d4a70;
+        background-size: cover;
+    }
+
+    body {
+        background-color: #0C0F6D;
+    }
+
+    @font-face {
+        font-family: "SF-Font";
+        src: url(assets/hyper-street-fighter-2-color.ttf) format("truetype");
+    }
+
+    .textWithFont {
+        font-family: "SF-Font";
+    }
+
+    .imageWorld {
+        width: 90vw;
+        height: 40vh;
+        margin: 10px;
+    }
+
+    .selectorImage {
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 120%;
+        top: -20%;
+    }
+
+    .selectorImage:hover {
+        visibility: visible;
+    }
+</style>
+
+<body>
+    <!--https://street-fighter-sprites.fandom.com/wiki/Super_Street_Fighter_II/Characters/Grid/Legacy SITE COM SPRITES-->
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <div>
+            <img class="" src="images\ryu-name.png" alt="">
+        </div>
+        <div>
+            <img class="imageWorld" src="images\ryu-bg.png" alt="">
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+            <div class="characterBox">
+                <img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+            <div class="characterBox">
+                <img src="images\ryu-icon.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
