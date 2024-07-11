@@ -23,7 +23,8 @@
     body {
         background-color: #0C0F6D;
     }
-
+    .imgCharBox{
+    }
     @font-face {
         font-family: "SF-Font";
         src: url(assets/hyper-street-fighter-2-color.ttf) format("truetype");
@@ -50,6 +51,25 @@
     .selectorImage:hover {
         opacity: 1;
     }
+    .charBanner{
+        display: flex;
+        flex-direction: column;
+        margin-bottom:10px;
+    }
+    .charRight{
+        margin-right:10px;
+    }
+    .charLeft{
+        margin-left:10px;
+    }
+    .charLargeImg{
+    width:55vh;
+    height: 40vh;
+    }
+    .charNameImg{
+    width: 80%;
+    height: 10vh;
+    }
 </style>
 
 <body>
@@ -61,67 +81,80 @@
         <div>
             <img class="imageWorld" src="images\ryu-bg.png" alt="">
         </div>
-        <div style="display: flex; flex-direction: row;">
-            <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-            <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-            <div class="characterBox">
-                <img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-            <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row;">
-            <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-            <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-            <div class="characterBox">
-                <img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-            <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-            <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-            <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-        </div>
-        <div style="display: flex; flex-direction: row;">
-            <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-            <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt=""><img
-                    src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-            <div class="characterBox">
-                <img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-            <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-            <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-            <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
-                <img src="images\ryu-icon.png" alt="">
-            </div>
-        </div>
+        <div style="display: flex; flex-direction: row; align-items: center;">
+            
 
+            <div class="charBanner charLeft">
+                <img class="charNameImg" src="./images/ryu-name.png" alt="" srcset="">
+                <img class="charLargeImg" src="./images/ryu-icon.png" alt="" srcset="">
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div style="display: flex; flex-direction: row;">
+                        <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                             <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                        </div>
+                        <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                             <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                    </div>
+                    <div class="characterBox">
+                        <img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                         <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                    </div>
+                    <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                         <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row;">
+                    <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                        <img  src="images\ryu-icon.png" alt="">
+                    </div>
+                    <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                        <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                    </div>
+                    <div class="characterBox">
+                        <img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                         <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                    </div>
+                    <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                         <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                    </div>
+                    <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                         <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                    </div>
+                    <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                         <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row;">
+                    <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                         <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                    </div>
+                    <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt=""><img
+                            src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                         <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                    </div>
+                    <div class="characterBox">
+                        <img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                         <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                    </div>
+                    <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                         <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                    </div>
+                    <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                         <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                    </div>
+                    <div class="characterBox"><img src="./assets/sfCharSelector.gif" class="selectorImage" alt="">
+                         <img class="imgCharBox" src="images\ryu-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="charBanner charLeft">
+                <img class="charNameImg" src="./images/ryu-name.png" alt="" srcset="">
+                <img class="charLargeImg" src="./images/ryu-icon.png" alt="" srcset="">
+            </div>
 
-    </div>
+            </div>
+        </div>
     </div>
 </body>
 
