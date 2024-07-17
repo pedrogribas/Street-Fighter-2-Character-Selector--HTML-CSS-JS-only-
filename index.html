@@ -8,9 +8,27 @@
     <title>CHOOSE YOUR CHARACTER</title>
 </head>
 <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body, html {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    img {
+      border: 0;
+      vertical-align: middle;
+    }
     .characterBox {
-        width: 130;
-        height: 130;
+        width: 100%;
+        height: 100%;
         background-color: #426da5;
         border: #9DA5A9 ridge 8px;
         position: relative;
@@ -26,8 +44,8 @@
         background-color: #0C0F6D;
     }
     .imgCharBox{
-        width: 130px;
-        height: 130px;
+        width: 100%;
+        height: 100%;
         transform: rotateY(180deg);
 
     }
@@ -43,7 +61,6 @@
     .imageWorld {
         width: 90vw;
         height: 40vh;
-        margin: 10px;
     }
     .selectorP2Image {
         opacity: 0;
@@ -72,13 +89,14 @@
         opacity: 1;
     }
     .charBanner{
+        height: 100%;
         overflow: hidden;
-        width: 500px;
+        width: 30vw;
         display: flex;
         flex-direction: column;
-        margin-bottom:10px;
     }
     .charRight{
+        align-items: flex-end;
         margin-right:10px;
     }
     .charLeft{
@@ -95,23 +113,18 @@
     }
     
 </style>
-
 <body>
     <audio id="move-cursor-sound" src="assets/SFII_02 - Move Cursor.wav" preload="auto"></audio>
     <audio id="char-selector" src="assets/char-select-sound.mp3" preload="auto" autoplay loop></audio>
     <audio id="select-character-sound" src="assets/SFII_03 - Selection.wav" preload="auto"></audio>
-
-    <!--https://street-fighter-sprites.fandom.com/wiki/Super_Street_Fighter_II/Characters/Grid/Legacy SITE COM SPRITES-->
     <div style="display: flex; flex-direction: column; align-items: center;">
         <div>
-            <img class="" src="images\ryu-name.png" alt=""> <!--change the image character icon here-->
+            <img class="" src="images\ryu-name.png" alt=""> 
         </div>
-        <div>
-            <img class="imageWorld" src="images/ryu-location.webp" alt=""> <!--change the image character location here-->
+        <div style="height: 40vh; margin-bottom:5vh; ">
+            <img class="imageWorld" src="images/ryu-location.webp" alt=""> 
         </div>
-        <div style="display: flex; flex-direction: row; align-items: center;">
-            
-
+        <div style="display: flex; flex-direction: row; align-items: center; height: 50vh;">
             <div class="charBanner charLeft" id="charBannerLeft">
                 <img class="charNameImg" id="charNameImgLeft" src="./images/ryu-name.webp" alt="" srcset="">
                 <img class="charLargeImg" id="charLargeImgLeft" src="./images/ryu-icon.webp" alt="" srcset="">
